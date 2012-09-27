@@ -64,7 +64,7 @@ class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
    * Retrieve a list of flowers. It's possible to search by name by adding
    * a name=foo query string parameter.
    */
-  get("/flowers",
+  get("/",
     summary("Show all flowers"),
     nickname("get flowers"),
     responseClass("List[Flower]"),
@@ -80,7 +80,7 @@ class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
   /*
    * Retrieve a single book based on its slug.
    */
-  get("/flowers/:slug",
+  get("/:slug",
     summary("Find by slug"),
     nickname("findBySlug"),
     responseClass("Flower"),
