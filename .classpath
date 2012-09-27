@@ -1,0 +1,64 @@
+<classpath>
+  <classpathentry output="target/scala-2.9.2/classes" path="src/main/scala" kind="src"></classpathentry>
+  <classpathentry output="target/scala-2.9.2/classes" path="src/main/java" kind="src"></classpathentry>
+  <classpathentry output="target/scala-2.9.2/test-classes" path="src/test/scala" kind="src"></classpathentry>
+  <classpathentry output="target/scala-2.9.2/test-classes" path="src/test/java" kind="src"></classpathentry>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.scalatra/scalatra/jars/scalatra-2.2.0-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.scalatra/scalatra-common/jars/scalatra-common-2.2.0-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.clapper/grizzled-slf4j_2.9.2/jars/grizzled-slf4j_2.9.2-0.6.9.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.4.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/io.backchat.rl/rl_2.9.2/jars/rl_2.9.2-0.3.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.1.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.scalatra/scalatra-scalate/jars/scalatra-scalate-2.2.0-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.fusesource.scalate/scalate-core/bundles/scalate-core-1.5.3.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.fusesource.scalate/scalate-util/bundles/scalate-util-1.5.3.jar" kind="lib"></classpathentry>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.scalatra/scalatra-json/jars/scalatra-json-2.2.0-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.json4s/json4s-core_2.9.2/jars/json4s-core_2.9.2-3.0.0-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.4.1.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.9.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.scalatra/scalatra-swagger/jars/scalatra-swagger-2.2.0-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.json4s/json4s-ext_2.9.2/jars/json4s-ext_2.9.2-3.0.0-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.json4s/json4s-native_2.9.2/jars/json4s-native_2.9.2-3.0.0-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.json4s/json4s-jackson_2.9.2/jars/json4s-jackson_2.9.2-3.0.0-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.0.5.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.0.5.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.0.5.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/com.wordnik/swagger-core_2.9.1/jars/swagger-core_2.9.1-1.1-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.4.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.6.3.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.16.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/jars/jackson-jaxrs-1.8.5.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.8.5.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.8.5.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.codehaus.jackson/jackson-xc/jars/jackson-xc-1.8.5.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/com.wordnik/swagger-annotations_2.9.1/jars/swagger-annotations_2.9.1-1.1-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.eclipse.jetty.orbit/javax.servlet/jars/javax.servlet-3.0.0.v201112011016.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.6.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.6.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.5.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.scalatra/scalatra-specs2/jars/scalatra-specs2-2.2.0-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.scalatra/scalatra-test/jars/scalatra-test-2.2.0-SNAPSHOT.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.eclipse.jetty/jetty-webapp/jars/jetty-webapp-8.1.3.v20120416.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.eclipse.jetty/jetty-xml/jars/jetty-xml-8.1.3.v20120416.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.eclipse.jetty/jetty-util/jars/jetty-util-8.1.3.v20120416.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.eclipse.jetty/jetty-servlet/jars/jetty-servlet-8.1.3.v20120416.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.eclipse.jetty/jetty-security/jars/jetty-security-8.1.3.v20120416.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.eclipse.jetty/jetty-server/jars/jetty-server-8.1.3.v20120416.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.eclipse.jetty/jetty-continuation/jars/jetty-continuation-8.1.3.v20120416.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.eclipse.jetty/jetty-http/jars/jetty-http-8.1.3.v20120416.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.eclipse.jetty/jetty-io/jars/jetty-io-8.1.3.v20120416.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.mockito/mockito-all/jars/mockito-all-1.9.0.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.6.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.apache.httpcomponents/httpmime/jars/httpmime-4.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.specs2/specs2_2.9.2/jars/specs2_2.9.2-1.12.jar" kind="lib"></classpathentry>
+  <classpathentry path="/home/dave/.ivy2/cache/org.specs2/specs2-scalaz-core_2.9.2/jars/specs2-scalaz-core_2.9.2-6.0.1.jar" kind="lib"></classpathentry>
+  <classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"></classpathentry>
+  <classpathentry path="bin" kind="output"></classpathentry>
+</classpath>
