@@ -19,6 +19,9 @@ import com.wordnik.swagger.core.ApiPropertiesReader
 // Our models
 import com.futurechimps.swagger.sample.models._
 
+// Data
+import com.futurechimps.swagger.sample.data._
+
 class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
   with JacksonJsonSupport with JValueResult with SwaggerSupport {
 
@@ -51,15 +54,6 @@ class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
 
   models = Map(swaggerToModel(classOf[Flower]))
 
-  /**
-   * Some fake flowers data so we can simulate retrievals.
-   */
-  lazy val flowers = List(
-      Flower("yellow-tulip", "Yellow Tulip"),
-      Flower("red-rose", "Red Rose"),
-      Flower("black-rose", "Black Rose"))
-
-
   /*
    * Retrieve a list of flowers. It's possible to search by name by adding
    * a name=foo query string parameter.
@@ -72,8 +66,8 @@ class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
     endpoint(""),
     notes("Shows all the flowers in the flower shop. You can search it too.")){
     params.get("name") match {
-      case Some(name) => flowers filter (_.name.toLowerCase contains name.toLowerCase)
-      case None => flowers
+      case Some(name) => FlowerData.all filter (_.name.toLowerCase contains name.toLowerCase)
+      case None => FlowerData.all
     }
   }
 
@@ -90,7 +84,7 @@ class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
       Parameter("slug", "Slug of flower that needs to be fetched",
         DataType.String,
         paramType = ParamType.Path))) {
-    flowers find     (_.slug == params("slug")) match {
+    FlowerData.all find (_.slug == params("slug")) match {
       case Some(b) => b
       case None => halt(404)
     }
