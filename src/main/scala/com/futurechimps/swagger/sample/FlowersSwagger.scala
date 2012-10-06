@@ -8,21 +8,6 @@ import org.json4s.jackson.Json4sScalaModule
 import org.json4s.{DefaultFormats, Formats}
 
 
-class ResourcesApp(implicit val swagger: Swagger) extends ScalatraServlet with JacksonSwaggerBase {
-
-  protected implicit val jsonFormats: Formats = DefaultFormats
-
-  before() {
-    response.headers += ("Access-Control-Allow-Origin" -> "*")
-  }
-
-  protected def buildFullUrl(path: String) = if (path.startsWith("http")) path else {
-    "http://%s:%s%s/%s".format(
-      request.getServerName,
-      request.getServerPort,
-      request.getContextPath,
-      path)
-  }
-}
+class ResourcesApp(implicit val swagger: Swagger) extends ScalatraServlet with JacksonSwaggerBase 
 
 class FlowersSwagger extends Swagger("1.0", "1")
