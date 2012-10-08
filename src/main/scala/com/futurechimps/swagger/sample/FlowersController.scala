@@ -41,18 +41,7 @@ class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
     contentType = formats("json")
   }
 
-
-  // TODO: this isn't in the tutorial yet.
-  def swaggerToModel(cls: Class[_]) = {
-    val docObj = ApiPropertiesReader.read(cls)
-    val name = docObj.getName
-    val fields = for (field <- docObj.getFields.asScala.filter(d => d.paramType != null))
-      yield (field.name -> ModelField(field.name, field.notes, DataType(field.paramType)))
-
-    Model(name, name, fields.toMap)
-  }
-
-  models = Map(swaggerToModel(classOf[Flower]))
+  models = Map(classOf[Flower])
 
   /*
    * Retrieve a list of flowers. It's possible to search by name by adding
