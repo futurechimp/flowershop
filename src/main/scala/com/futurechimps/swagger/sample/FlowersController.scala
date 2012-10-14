@@ -51,7 +51,7 @@ class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
     summary("Show all flowers"),
     nickname("getFlowers"),
     responseClass("List[Flower]"),
-    //parameters(Parameter("name", "A name to search for", DataType.String, paramType = ParamType.Query, required = false)),
+    parameters(Parameter("name", "A name to search for", DataType.String, paramType = ParamType.Query, required = false)),
     endpoint(""),
     notes("Shows all the flowers in the flower shop. You can search it too.")){
     params.get("name") match {
