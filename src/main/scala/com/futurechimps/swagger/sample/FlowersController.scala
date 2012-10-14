@@ -23,14 +23,14 @@ import com.futurechimps.swagger.sample.models._
 import com.futurechimps.swagger.sample.data._
 
 class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
-  with JacksonJsonSupport with JValueResult with SwaggerSupport {
+  with JacksonJsonSupport with JValueResult with SwaggerSupport with CorsSupport {
 
   // Sets up automatic case class to JSON output serialization, required by
   // the JValueResult trait.
   protected implicit val jsonFormats: Formats = DefaultFormats
 
   // The name of our application. This will show up in the Swagger docs.
-  override protected val applicationName = Some("flower")
+  override protected val applicationName = Some("flowers")
 
   // A description of our application. This will show up in the Swagger docs.
   protected val applicationDescription = "The flowershop API. It exposes operations for browing and searching lists of flowers"
@@ -51,7 +51,7 @@ class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
     summary("Show all flowers"),
     nickname("get flowers"),
     responseClass("List[Flower]"),
-    parameters(Parameter("q", "query", DataType.String, required = false)),
+    parameters(Parameter("name", "A name to search for", DataType.String, paramType = ParamType.Query, required = false)),
     endpoint(""),
     notes("Shows all the flowers in the flower shop. You can search it too.")){
     params.get("name") match {
@@ -68,7 +68,7 @@ class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
     nickname("findBySlug"),
     responseClass("Flower"),
     endpoint("{slug}"),
-    notes("Returns the flower for the provided slug, if a matching flower exists"),
+    notes("Returns the flower for the provided slug, if a matching flower exists."),
     parameters(
       Parameter("slug", "Slug of flower that needs to be fetched",
         DataType.String,
