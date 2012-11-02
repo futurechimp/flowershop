@@ -36,7 +36,7 @@ class FlowersController(implicit val swagger: Swagger) extends ScalatraServlet
   protected val applicationDescription = "The flowershop API. It exposes operations for browing and searching lists of flowers"
 
 
-  // Before every operation, set the output format to JSON.
+  // Before every action runs, set the content type to be in JSON format.
   before() {
     contentType = formats("json")
   }
