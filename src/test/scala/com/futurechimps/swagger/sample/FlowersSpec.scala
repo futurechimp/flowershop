@@ -7,8 +7,8 @@ class FlowersSpec extends ScalatraSpec { def is =
   "GET / on Flowers"                     ^
     "should return status 200"                  ! root200^
                                                 end
-    
-  addServlet(classOf[FlowersController], "/*")
+  implicit val swagger = new FlowersSwagger  
+  addServlet(new FlowersController, "/*")
 
   def root200 = get("/") { 
     status must_== 200
