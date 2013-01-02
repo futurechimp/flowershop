@@ -15,16 +15,18 @@ class FlowersSpec extends ScalatraSpec { def is =
                                                 end
 
   addServlet(classOf[FlowersController], "/flowers/*")
+  implicit val swagger = new FlowersSwagger
+  addServlet(new FlowersController, "/flowers/*")
 
-  def root200 = get("/") {
+  def root200 = get("/flowers") {
     status must_== 200
   }
 
-  def nameParamWorks = get("/?name=rose") {
+  def nameParamWorks = get("/flowers/?name=rose") {
     status must_== 200
   }
 
-  def slugWorks = get("/red-rose") {
+  def slugWorks = get("/flowers/red-rose") {
     status must_== 200
   }
 }
