@@ -11,11 +11,11 @@ classpathTypes ~= (_ + "orbit")
 seq(webSettings :_*)
 
 libraryDependencies ++= Seq(
-  "org.scalatra" % "scalatra" % "2.2.0-RC2",
-  "org.scalatra" % "scalatra-scalate" % "2.2.0-RC2",
-  "org.scalatra" % "scalatra-specs2" % "2.2.0-RC2" % "test",
-  "org.scalatra" % "scalatra-json" % "2.2.0-RC2",
-  "org.scalatra" % "scalatra-swagger"  % "2.2.0-RC2",
+  "org.scalatra" % "scalatra" % "2.2.0-SNAPSHOT",
+  "org.scalatra" % "scalatra-scalate" % "2.2.0-SNAPSHOT",
+  "org.scalatra" % "scalatra-specs2" % "2.2.0-SNAPSHOT" % "test",
+  "org.scalatra" % "scalatra-json" % "2.2.0-SNAPSHOT",
+  "org.scalatra" % "scalatra-swagger"  % "2.2.0-SNAPSHOT",
   "org.json4s"   %% "json4s-jackson" % "3.0.0",
   "com.wordnik" % "swagger-core_2.9.1" % "1.1-RC2",
   "ch.qos.logback" % "logback-classic" % "1.0.6" % "runtime",
