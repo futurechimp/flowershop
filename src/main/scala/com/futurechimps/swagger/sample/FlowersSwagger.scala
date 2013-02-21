@@ -9,7 +9,7 @@ import org.json4s.{DefaultFormats, Formats}
 
 
 class ResourcesApp(implicit val swagger: Swagger) extends ScalatraServlet with JacksonSwaggerBase {
-  implicit val jsonFormats: Formats = DefaultFormats
+  override implicit val jsonFormats: Formats = DefaultFormats
 } 
 
 class FlowersSwagger extends Swagger("1.0", "1")
